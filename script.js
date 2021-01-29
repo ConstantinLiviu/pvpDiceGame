@@ -20,7 +20,6 @@ const rules = document.querySelector('.rules');
 let scores, currentScore, activePlayer, playing;
 
 startGame.addEventListener('click', function () {
-  console.log('It works!');
   rules.classList.add('hidden');
 });
 
