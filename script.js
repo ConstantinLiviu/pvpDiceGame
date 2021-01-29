@@ -11,10 +11,17 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+const startGame = document.querySelector('.startgame');
+const rules = document.querySelector('.rules');
+
 
 // Starting conditions
 
 let scores, currentScore, activePlayer, playing;
+
+startGame.addEventListener('click', function () {
+  rules.classList.add('hidden');
+});
 
 function init() {
   scores = [0, 0];
